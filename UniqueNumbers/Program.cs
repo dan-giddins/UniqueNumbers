@@ -1,6 +1,6 @@
 ﻿var inputs = new List<int>();
 
-for (var i = 1; i < 10; i++)
+for (var i = 1; i < 1000; i++)
 {
 	inputs.Add(i);
 	if (!isDistinct(inputs))
@@ -36,7 +36,7 @@ bool isDistinct(List<int> inputs)
 	if (distinct)
 	{
 		Console.WriteLine(string.Join(", ", inputs));
-		Console.WriteLine(string.Join(", ", orderedOutputs));
+		//Console.WriteLine(string.Join(", ", orderedOutputs));
 		Console.WriteLine();
 	}
 	return distinct;
